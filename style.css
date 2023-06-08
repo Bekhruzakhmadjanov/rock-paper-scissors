@@ -1,0 +1,12 @@
+/* body {
+    display: flex;
+} */
+
+button{
+    background-color: darkslategray;
+    color: #eee;
+    border-color: white;
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+}
