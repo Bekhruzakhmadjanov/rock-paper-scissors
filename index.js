@@ -26,6 +26,7 @@ function playRound(playerSelection) {
             + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore);
 
         if(computerScore === 5) {
+            alert("You lose!");
             result += '<br><br>You lost the game! Reload the page to play again';
             buttons.forEach(elem => {
                 elem.disabled = true
@@ -34,17 +35,16 @@ function playRound(playerSelection) {
     }
 
     else if (playerSelection === computerSelection) {
-        alert("Tie");
         result = ('Tie! ' + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore);
     }
 
     else {
-        alert("You win!");
         playerScore++;
         result = ('You win! ' + playerSelection + ' beats ' + computerSelection
             + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore);
 
         if(playerScore === 5) {
+            alert("You win!");
             result += '<br><br>You win the game! Reload the page to play again';
             buttons.forEach(elem => {
                 elem.disabled = true
