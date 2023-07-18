@@ -1,0 +1,58 @@
+html {
+    --s: 200px;
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+
+    background: 
+        repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg)
+        calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+        
+    background-size: var(--s) calc(var(--s)*0.577);
+    font-family: 'Tektur', cursive;
+}
+
+body {
+    padding: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3 {
+    color: #f5f5f5;
+    font-weight: 400;
+    font-size: 72px;
+}
+
+.buttons {
+    display: flex;
+    gap: 6em;
+}
+
+input {
+    position: relative;
+    transition: .2s ease-in;
+    z-index: 1;
+    border: 1px solid #f5f5f5;
+    background-color: #292929;
+    color: #f5f5f5;
+    font-size: large;
+    padding: 15px;
+    min-height: 80px; 
+    min-width: 160px;
+}
+
+input:hover {
+    background-color: #b3b3b3;
+    border: none;
+    color: #0c0c0c;
+}
+
+#result {
+    padding: 3%;
+    color: #f5f5f5;
+    font-size: larger;
+}
